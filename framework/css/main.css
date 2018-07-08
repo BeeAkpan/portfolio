@@ -8,6 +8,9 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+/**{
+	border: 1px solid red !important;
+}*/
 @media only screen and (max-width: 300px){
 	p{
 		background-color: blue;
@@ -16,7 +19,26 @@
 .row{
 	width: 100%;
 	display: flex;
-	
+}	
+.side{
+
+	display: flex;
+}
+
+.head{
+	display: flex;
+}
+.app{
+	display: flex;
+}
+.image{
+	max-width: 460px;
+	margin-left: 20px;
+}
+
+.description{
+	max-width: 705px;
+	padding-left: 20px;
 }
 .btn {
     position: absolute;
@@ -37,7 +59,7 @@
     background-color: black;
 }
 .footer {
-   /*position: fixed;*/
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -91,4 +113,5 @@ p{
 	background-position: center;
 	height: 400px;
 	width:100%;
+	opacity: 0.5; filter: alpha(opacity=50);
 }
